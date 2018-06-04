@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.tvasouza</groupId>
+	<artifactId>WebServiceDesafioJusbrasil</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<!-- <dependencies> <dependency> <groupId> QUAL E O ENDEREÇO DO WEBSITE 
+		DESTA DEPENDENCIA</groupId> <artifactId> ??? </artifactId> <version> QUAL 
+		A VERSÃO QUE EU QUERO DESTA DEPENCENCIA</version> </dependency> </dependencies> -->
+
+	<!-- search.maven.org -->
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<!-- https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+				<!-- APOS CONFIGURAR A VERSAO DO SOURCE E TARGET(JRE), DEVE-SE ATUALIZAR 
+					O PROJETO MAVEN EM QUESTAO PARA QUE A HAJA A ALTERACAO DA VERSAO -->
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
